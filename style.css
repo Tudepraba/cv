@@ -144,6 +144,7 @@ ul { list-style: none; }
 /* Foto persegi, garis bingkai menempel tepat di tepi foto */
 .photo {
     --frame: 3px;   /* tebal garis bingkai */
+    --frame-color: #ffffff;   /* warna garis bingkai */
     --gap: 0px;     /* jarak foto ke garis; isi mis. 8px jika ingin ada celah */
     order: 2;
     width: 100%;
@@ -157,7 +158,7 @@ ul { list-style: none; }
     aspect-ratio: 1 / 1;       /* selalu kotak */
     object-fit: cover;         /* foto mengisi kotak tanpa gepeng */
     object-position: center;
-    border: var(--frame) solid var(--accent);
+    border: var(--frame) solid var(--frame-color);
     padding: var(--gap);
     border-radius: 0;
     background: var(--bg);     /* warna celah jika --gap diisi */
